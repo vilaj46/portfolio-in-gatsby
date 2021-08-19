@@ -4,6 +4,7 @@ module.exports = {
     title: "Portfolio in Gatsby",
   },
   plugins: [
+    "gatsby-plugin-sass",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
@@ -12,12 +13,23 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
+        name: "Julian Vila's Portfolio",
+        short_name: "JV Portfolio",
+        start_url: "/",
+        background_color: "#fff",
+        theme_color: "#02aab0",
+        display: "standalone",
         icon: "src/images/icon.png",
       },
     },
     "gatsby-transformer-remark",
     "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    {
+      resolve: `gatsby-transformer-sharp`,
+      options: {
+        checkSupportedExtensions: false,
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
