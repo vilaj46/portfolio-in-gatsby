@@ -2,10 +2,10 @@ import React, { useState, useEffect, Fragment } from "react";
 
 // Components
 import Hero from "./Hero/Hero";
-// import About from "./About/About";
-// import Projects from "./Projects/Projects";
-// import Contact from "./Contact/Contact";
-// import Footer from "./Footer/Footer";
+import About from "./About/About";
+import Projects from "./Projects/Projects";
+import Contact from "./Contact/Contact";
+import Footer from "./Footer/Footer";
 
 import {
   heroData,
@@ -21,6 +21,7 @@ function App() {
   const [projects, setProjects] = useState([]);
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     setHero({ ...heroData });
@@ -28,16 +29,19 @@ function App() {
     setProjects([...projectsData]);
     setContact({ ...contactData });
     setFooter({ ...footerData });
+    setLoaded(true);
   }, []);
 
   return (
-    <Fragment>
-      <Hero hero={hero} />
-      {/* <About about={about} />
-      <Projects projects={projects} />
-      <Contact contact={contact} />
-      <Footer footer={footer} /> */}
-    </Fragment>
+    loaded && (
+      <Fragment>
+        <Hero hero={hero} />
+        <About about={about} />
+        <Projects projects={projects} />
+        <Contact contact={contact} />
+        <Footer footer={footer} />
+      </Fragment>
+    )
   );
 }
 

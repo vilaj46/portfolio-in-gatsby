@@ -32,9 +32,8 @@ export const projectsData = [
     id: nanoid(),
     img: "mockCritical.png",
     title: "Mock Critical",
-    info: "Mock Critical is a React app which was created for educational purposes.",
-    info2:
-      "React may be overkill for a simple homepage like this one, but the goal was to familiarize myself with unit/hook testing.",
+    info: "A mobile friendly landing page of a fake clothing store.",
+    info2: "This react app contains unit, hook, and integration testing.",
     url: "https://vilaj46.github.io/mock-critical/",
     repo: "https://github.com/vilaj46/mock-critical", // if no repo, the button will not show up
   },
@@ -42,7 +41,7 @@ export const projectsData = [
     id: nanoid(),
     img: "unionGables.png",
     title: "Union Gables Inn",
-    info: "Union Gables Inn is a React app built using Gatsby.",
+    info: "Gatsby application which makes use of styled/reusable components.",
     info2: "",
     url: "https://xenodochial-swanson-ae4f70.netlify.app/",
     repo: "https://github.com/vilaj46/union-gables", // if no repo, the button will not show up
@@ -59,7 +58,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: ["brief1.png", "brief2.png", "brief3.png", "brief4.png"],
+    img: ["brief1.png", "brief1232.png", "brief1233.png", "brief1234.png"],
     title: "Ad1 & Ad2 Brief Preparation",
     info: "Appellate Division brief preparation",
     url: "#!",
@@ -76,11 +75,11 @@ export const projectsData = [
   {
     id: nanoid(),
     img: [
-      "documentDownloaderReact1.png",
-      "documentDownloaderReact2.png",
-      "documentDownloerReact3.png",
-      "documentDownloerReact4.png",
-      "documentDownloerReact5.png",
+      "documentDownloaderReact1231.png",
+      "documentDownloaderReact1232.png",
+      "documentDownloaderReact1233.png",
+      "documentDownloaderReact1234.png",
+      "documentDownloaderReact1235.png",
     ],
     title: "Document Downloader - Chrome",
     info: "Assistance to download specific documents",
@@ -94,6 +93,14 @@ export const projectsData = [
     info: "Contact Info and links for Franklin Court Press",
     url: "http://www.franklincourtpress.com/",
     repo: "https://github.com/vilaj46/fcp-next",
+  },
+  {
+    id: nanoid(),
+    img: "easyHeaders.png",
+    title: "Easy Headers",
+    info: "Easier way to add headers that adobe acrobat couldnt do",
+    url: "https://vilaj46.github.io/pdf-ui/",
+    repo: "https://github.com/vilaj46/pdf-ui",
   },
 ];
 

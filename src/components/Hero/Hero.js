@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-scroll";
 import Fade from "react-reveal/Fade";
-import styled from "styled-components";
-import { Container, Jumbotron } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 const Hero = ({ hero }) => {
   const { title, name, subtitle, cta } = hero;
@@ -27,8 +26,8 @@ const Hero = ({ hero }) => {
         <Fade
           left={isDesktop}
           bottom={isMobile}
-          duration={1000}
-          delay={500}
+          duration={500}
+          delay={250}
           distance="30px"
         >
           <h1 className="hero-title">
@@ -40,8 +39,8 @@ const Hero = ({ hero }) => {
         <Fade
           left={isDesktop}
           bottom={isMobile}
-          duration={1000}
-          delay={1000}
+          duration={500}
+          delay={500}
           distance="30px"
         >
           <p className="hero-cta">
